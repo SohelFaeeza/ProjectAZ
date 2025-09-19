@@ -1,0 +1,48 @@
+/* Make body full screen and center content */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+}
+
+/* Container styling with light purple background */
+.container {
+  background: #E6E6FA; /* light purple (lavender) */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* Button styling */
+a.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #0078d7;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background: #005fa3;
+}
+
+/* Headings and paragraph */
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #4B0082; /* dark purple */
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
