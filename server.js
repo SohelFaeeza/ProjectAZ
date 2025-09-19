@@ -5,11 +5,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Get DB connection string from environment variable (Key Vault injects it)
-const connectionString = process.env.DB_CONNECTION;
+const connectionString = process.env.dbconnection;
 
 app.get("/", async (req, res) => {
   if (!connectionString) {
-    return res.status(500).send("❌ DB_CONNECTION not set");
+    return res.status(500).send("❌ dbconnection not set");
   }
 
   try {
@@ -22,7 +22,7 @@ app.get("/", async (req, res) => {
       <p>Web App: ${process.env.WEBSITE_SITE_NAME || "local"}</p>
     `);
   } catch (err) {
-    res.status(500).send("❌ DB Connection Failed: " + err.message);
+    res.status(500).send("❌ dbconnection: " + err.message);
   }
 });
 
